@@ -1,0 +1,9 @@
+0. Weihong Chen:wc470, Ruimin Li:rl751
+
+1.For the LS functionalities, we keep track of which TS will be responded to the query by using the rlist, wlist, xlist to iterate both host names in ts1 and ts2. For the timing of each, we have created a timer litmit that holds 5 seconds, one timer for ts1, and one timer for ts2. If the (limit - (t2 - t1))is 0 or less, it means the neither of them respond, otherwise they responded.
+
+2. There's no issue currently in the attached code within our knowledge.
+
+3.We spent a long time on figuring out that we need to use and how to use "def select", in which it returns a tuple of 3 list, and how that there's timeout within the parameter. 
+
+4.By working on this project we learn that this can be a simulation of a real life situation in which a company wants to efficently handles a large data within a time restrain on servers. And load-balancing DNS server is the solution to this problem.
